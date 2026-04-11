@@ -1,0 +1,14 @@
+Exercise_5A_Datastories
+
+a) What information is being illustrated in each visualization? 
+ Self-Description: The information shown in this visualization is the amount of black ink in each image.
+ Lakes and Oceans: The information shown in this visualization is the depth of major lakes and oceans. Also showing the trenches in each ocean and lake. They combined the oceans and lakes to make them overlap so you can compare the difference in shape and depth.
+ A Timeline of Earth's Average Temperature: This visualization uses a line chart to illustrate the temperature change from 20000bce to 2016(present time of the visualization). The chart also shows a prediction of the temperature change of where it's headed of the year 2100.
+
+b) What do you think is interesting or engaging about each of these examples? Each one is uniquely different based on the information they are trying to show and the type of chart they use.  
+
+c) Each example uses a different visualization format. For each of them, why do you think the author chose that format? How does the format support the information being shared? They choose based on what they are trying to display. Rather than using numbers, it's easier for people to understand. Although it's good to make the visualization easy to read, to go with what you're trying to explain. For example, for the "Lakes and Oceans" the use a chart that shows the water depth, yet the chart "A Timeline of Earth's Average Temperature" shows the timeline and uses colors representing the weather from cold to hot.
+
+d) Did these examples make you think? Did they evoke any feelings from you? These examples made me think about how I am going to explain my data and what charts to use based on that data. Just because I can or those in software understand it won't be the case if I have to explain to others outside my field. I should not only make it concise but also easy to understand. Make the visualization help them understand what I am portraying. 
+
+e) Which of these do you think tells the most compelling story? Why? From what I can see, the visualization "A Timeline of Earth's Average Temperature" tells the most compelling story. The reason for this is that it uses information starting from years ago to back up its claim. It also uses other visualizations and evidence from each different timeline to support it as it goes. It shows the person really did their research, and the chart is also very easy to understand.

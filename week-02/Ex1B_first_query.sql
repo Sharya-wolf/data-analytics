@@ -1,0 +1,3 @@
+/*
+Sakila is a database used to collect information about sales and progress for use by analyst. 
+*/

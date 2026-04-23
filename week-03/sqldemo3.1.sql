@@ -91,6 +91,59 @@ SELECT ProductName AS 'Product',
  FROM products
  ORDER BY ProductName ASC;
  
+ USE northwind;
+ -- EXAMPLE 1
+ SELECT o.OrderID,
+ c.CompanyName AS 'Customer',
+ o.OrderDate
+ FROM Orders o
+ JOIN Customers c ON o.CustomerID = c.CustomerID
+ ORDER BY o.OrderDate DESC
+ LIMIT 5;
+
+-- EXAMPLE 2
+SELECT OrderID, CompanyName, OrderDate
+FROM Orders
+JOIN Customers USING (CustomerID)
+LIMIT 5;
+
+-- EXAMPLE 3
+SELECT p.ProductName, c.CategoryName, p.UnitPrice
+FROM Products p
+INNER JOIN Categories c ON p.CategoryID = c.CategoryID
+ORDER BY c.CategoryName, p.ProductName
+LIMIT 6;
+-- Another way
+SELECT p.ProductName, c.CategoryName, p.UnitPrice
+FROM products p
+INNER JOIN Categories c USING (CategoryID)
+ORDER BY c.CategoryName, p.ProductName
+LIMIT 6;
+
+-- EXAMPLE 5
+-- CUSTOMERS WITH ZERO ORDERS WILL SHOW 0 IN ORDER COUNT
+SELECT c.CompanyName, COUNT(o.OrderID) AS 'Order Count'
+FROM Customers c
+LEFT JOIN Orders o ON c.CustomerID = o.CustomerID
+GROUP BY c.CompanyName
+ORDER BY 'Order Count' ASC
+LIMIT 5;
+
+ -- EXAMPLE 1: Total Number of Orders--
+ -- Find out how many orders are recordered in the Orders table in total--
+ USE northwind;
+ SELECT COUNT(*) AS 'Total Orders'
+ FROM orders;
+ SELECT COUNT(OrderID) AS 'Total Orders'
+ FROM orders;
+ 
+ -- EXAMPLE 2 Total Freight Charged--
+ -- 
+ SELECT SUM(Freight) AS 'Total Freight', 
+ AVG(Freight) AS 'Average Freight',
+ MIN(Freight) AS 'Minmum Freight',
+ MAX(Freight) AS 'Maximum Freight'
+ FROM orders;
  
  
  

@@ -3,10 +3,9 @@ Use northwind;
 SELECT CategoryID, CategoryName, Description
 FROM categories;
 
-
-
 -- Question 2--
-
+SELECT ProductID, ProductName, Discontinued
+FROM products
 
 
 -- Question 3--

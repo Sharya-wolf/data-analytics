@@ -61,3 +61,26 @@ Total = Meal_cost + Meal_tip + Meal_tax
 print(f"{'Meal_cost':<6}{Meal_cost:>6,.2f}")
 
 
+# USING LISTS
+classmates = ["Chantal Lee", "Dimitri Nji", "Vesna Cari"]
+name1 = classmates[0]
+name2 = classmates[1]
+name3 = classmates[2]
+
+list1 = [1,2,3,4,5,6,7,8,9,10]
+print(list1)
+
+list2 = [1,1.5, "ABC",  "TRUE", [1,2,3]]
+print(list2) 
+
+# Dictionary - student names and home states
+students = {
+    'Sharleen' : 'New Jersey',
+    'Vesna' : 'New York',
+    "Sha-Rya" : 'New York' 
+}
+
+# Display all students and their home states
+print(f"Sharleen : {students['Sharleen']}")
+print(f"Vesna : {students['Vesna']}")
+print(f"Sha'Rya : {students['Sha-Rya']}")

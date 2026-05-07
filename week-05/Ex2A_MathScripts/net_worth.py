@@ -13,12 +13,28 @@
 # c) Now create the script.
 
 # Script:
-Assets = 92.59 + 88.98
-print(f"Your total assests are {Assets}")
-Debts = 373.64 + 1701.84
-print(f"Your debts are {Debts}")
+  
+  # Assets
+Checkings = 92.59
+Wisely = 88.98
+
+  # Debts
+Credit_debt = 373.64
+Other_debt = 1701.84
+
+# Calculations
+Assets = Checkings + Wisely
+Debts = Credit_debt + Other_debt
 Net_worth = Assets - Debts
+
+# Results
+print(f"Your total assests are ${Assets}")
+print(f"Your total debts are ${Debts}")
 print(f"Your net worth is {Net_worth}")
 
+# Outputs
 
+  # Your total assets are $181.57
+  # Your debts are $2075.48
+  # Your net worth is -1893.91
 

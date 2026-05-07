@@ -6,3 +6,21 @@
     # and the day of the month is the other side. How would you calculate the area of this rectangle?
 
   # b) Figure out the formula and what the script would look like.
+
+# Script:
+Length = 23
+Width = 10
+
+# Calculations
+Area = Length * Width
+
+# Results:
+print(f"Side A is {Length}")
+print(f"Side B is {Width}")
+print(f"The area of the rectangle is {Area}")
+
+# Output:
+# Side A is 23
+# Side B is 10
+# The area of the rectangle is 230
+

@@ -68,14 +68,38 @@ student1.display_info()
 student2.display_info()
 # -------------------------------------------------------------------------
 
+# Read and write files
 
+# Writing to a file
+with open("students.txt", "w") as file:
+   file.write("Alice\n")
+   file.write("Bob\n")
+# When using with openit automatically closes the file once your done
+# -------------------------------------------------------------------------
+# Reading from a file
+with open("student.text", "r") as file:
+   content = file.read()
+   print(content) # Alice Bob
 
+# Open file for reading
+# with open("example.txt", "r") as file:
+  # content = file.read()
+ #  print(content)
 
+# Open file for writing
+with open("example.txt", "w") as file:
+   file.write("Hello, Python!")
 
+# Append text to a file
+with open("example.txt", "a") as file:
+   file.write("This file was created.")
 
+# Read and write to the name file
+with open("example.txt", "r+") as file:
+   content = file.read()
+   print(content)
 
-
-
+   file.write("\nAdditional text.")
 
 
 

@@ -20,7 +20,7 @@ f = open("myfile.txt", "w")
 # The Write Method
 # This function inserts the string into the text file on a single line.
 
-file.write("Hello There\n")
+# file.write("Hello There\n")
 
 # The writelines()
 

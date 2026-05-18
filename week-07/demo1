@@ -1,0 +1,161 @@
+# ===================================================================
+# Description: In class example/notes
+# Sha'Rya Weaver
+# 5/18/2026
+# ===================================================================
+
+# Creating arrays
+
+import numpy as np
+
+arr1D =np.array([1, 2, 3])
+
+arr2D = np.array([
+    [1, 2, 3]
+    [1, 2, 3]
+    [1, 2, 3]])
+
+arr3D = np.array([
+    [1, 2, 3]
+    [1, 2, 3]
+    [1, 2, 3]
+    
+    [1, 2, 3]
+    [1, 2, 3]
+    [1, 2, 3]
+    
+    [1, 2, 3]
+    [1, 2, 3]
+    [1, 2, 3]])
+
+# ----------------------------------------------------------------
+
+import numpy as np
+
+print("=== Numpy Array Creation Functions ===\n")
+
+# 1. array() - create from Python list
+a = np.array([1, 2, 3, 4, 5])
+print("np.array([1,2,3,4,5])")
+print(a, "\n")
+
+# 2. zeros() - array of zeros
+b =np.zeros((2, 3))
+print("np.zeros((2,3))")
+print(b, "\n")
+
+# 3. ones() - array of ones
+c = np.ones((2, 2))
+print("np.ones((2,2))")
+print(c, "\n")
+
+# 4. full() - array filled with a constant value
+d = np.full((3, 2), 7)
+print("np.full((3,2), 7)")
+print(d, "\n")
+
+# -----------------------------------------------------------------
+# Array Attributes
+
+import numpy as np
+
+# Create a 2D Numpy array
+a1 = np.array([[10, 20, 30],
+              [40, 50, 60]])
+print("Array")
+print(a1)
+
+# .shape - dimensions (rows, columns)
+print("\nShape of array:", a1.shape)
+
+# .ndim - number of dimensions
+print("Number of dimensions (ndim):", a1.ndim)
+
+# .dtype - data type of elements
+print("Data type (dtype):", a1.dtype)
+
+# .size - total number of elements
+print("Total number of elements (size):", a1.size)
+
+# -----------------------------------------------------------
+# Loop tru the elements in 3D
+# 3D full traversal
+
+import numpy as np
+
+arr3d = np.array([
+    [
+        [1, 2],
+        [3, 4]
+    ],
+    [
+        [5, 6],
+        [7, 8]
+    ]
+])
+
+# Full tranersal
+for layer in arr3d:
+    for row in layer:
+        for value in row:
+            print(value)
+
+# To concatenate arrays
+import numpy as np
+
+arr1 = np. array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
+
+arr3 = np.concatenate((arr1, arr2))
+print(arr3)
+
+import numpy as np
+
+arrA = np.arry([
+    [1, 2],
+    [3, 4]
+])
+
+arrB =np.array([
+    [5, 6],
+    [7, 8]
+])
+
+# join horizontally (column-wise)
+result2 = np.concatenate((arrA, arrB), axis=1)
+print(result2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

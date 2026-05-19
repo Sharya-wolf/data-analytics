@@ -1,0 +1,216 @@
+# ===============================================================================================
+# Using Pandas
+# Sha'Rya Weaver
+# 5/19/2026
+# ===============================================================================================
+
+# Pandas can easily read a CSV file and convert it into a DatFrame
+# Using pd.read_csv()
+
+import pandas as pd
+
+# Read the CSV file
+df = pd.read_csv("G:\Yu_Class 7\PythonFiles2026\Week7\students.csv")
+
+# Display the DataFrame
+print(df)
+# --------------------------------------------------------------------------------------------------
+
+# Insert a column using .insert()
+
+import pandas as pd
+
+data = {
+    "Name": ["Alice", "Bob", "Charlie"],
+    "SQL": [85, 78, 92]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+print()
+# Insert a column
+
+df.insert(1, "Java", [80, 85, 90])
+print(df)
+# ----------------------------------------------------------------------------------------------------
+
+# Pandas statistical functions
+
+import pandas as pd
+
+data = {
+    "Student":["Amy", "Bob", "Cara", "Dan", "Eva"],
+    "Score":[85, 92, 78, 95, 100]
+}
+
+df = pd.DataFrame(data)
+print(df)
+print()
+
+print("SUM:", df["Score"].sum())
+print("COUNT:", df["Score"].count())
+print("MEAN:", df["Score"].mean())
+print("MEDIAN:", df["Score"].median())
+print("MIN:", df["Score"].min())
+print("MAX:", df["Score"].max())
+
+print("\nAggregate Results:")
+print(df["Score"].agg(["sum","mean","median","min","max"]))
+# ----------------------------------------------------------------------------------------------
+
+# Pandas group-by
+
+import pandas as pd
+
+data = {
+    "Department": ["IT", "HR", "IT", "Sales", "HR", "Sales"],
+    "Employee": ["Amy", "Bob", "Cara", "Dan", "Eva", "Frank"],
+    "Salary": [70000, 50000, 80000, 60000, 55000, 65000]
+}
+
+df = pd.DataFrame(data)
+print(df)
+print()
+# ---------------------------------------------------------------------------------------------------
+
+# Group by department
+grouped = df.groupby("Department")
+
+print("SUM")
+print(grouped["Salary"].sum())
+
+print("\nMEAN")
+print(grouped["Salary"].mean())
+
+print("\nCOUNT")
+print(grouped["Employee"].count())
+# -----------------------------------------------------------------------------------------------------
+
+# sort_index() and rank()
+
+import pandas as pd
+
+# Create DataFrame
+df = pd.DataFrame({
+    "Student": ["Amy", "Bob", "Cara", "Dan"],
+    "Score": [88, 95, 79, 91]
+}, index=[3, 1, 2, 0])
+
+print("ORIGINAL DATAFRAME")
+print(df)
+print()
+
+# Sort by index
+print("\nSORTED INDEX")
+print(df.sort_index())
+
+# Rank scores
+df["Rank"] = df["Score"].rank(ascending=False)
+
+print("\nWITH RANKINGS")
+print(df)
+
+# Sort index from highest to lowest
+print("\nSORTED INDEX (Highest to Lowest)")
+sorted_df = df.sort_index(ascending=False)
+print(sorted_df)
+
+# Rank scores from highest to lowest
+df["Rank"] = df["Score"].rank(ascending=False)
+
+# Sort by rank sonhighest score appears first
+ranked_df = df.sort_values(by="Rank")
+
+print("\nRANKINGS (Highest to Lowest)")
+print(ranked_df)
+# ------------------------------------------------------------------------------------------------------
+
+# -----------------------------
+# DataFrame 1: Students
+# -----------------------------
+students = pd.DataFrame({
+    "StudentID":[1, 2, 3, 4],
+    "Name": ["Amy", "Bob", "Cara", "Dan"]
+})
+
+# --------------------------------
+# DataFrame 2: Scores
+# --------------------------------
+scores = pd.DataFrame({
+    "StudentID": [1, 2, 3, 5],
+    "Scores": [85, 92, 78, 88]
+})
+
+print("STUDENTS DATAFRAME")
+print(students)
+
+print("\nSCORES DATAFRAME")
+print(scores)
+
+print()
+# --------------------------------------------------------------------------------------
+
+# Joins
+# -------------------------------
+# 1. INNER JOIN (default)
+# -------------------------------
+inner_merge = pd.merge(students, scores, on="StudentID", how="inner")
+print("\nINNER MERGE (only matching StudentID)")
+print(inner_merge)
+
+# ------------------------------
+# 2. LEFT JOIN
+# ------------------------------
+left_merge = pd.merge(students, scores, on="StudentID", how="left")
+print("\nLEFT MERGE (all students kept)")
+print(left_merge)
+
+# -----------------------------
+# 3. RIGHT JOIN
+# -----------------------------
+right_merge = pd.merge(students, scores, on="StudentID", how="right")
+print("\nRIGHT MERGE (all scores kept)")
+print(right_merge)
+
+# ----------------------------
+# 4. OUTER JOIN
+# ----------------------------
+outer_merge = pd.merge(students, scores, on="StudentsID", how="outer")
+print("\nOUTER MERGE (all data from both)")
+print(outer_merge)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

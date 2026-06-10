@@ -19,7 +19,7 @@
 
 
 
-###### Category ID: 
+###### Category ID:
 
 Column: Category ID
 
@@ -53,7 +53,7 @@ Calculations: The type of calculations where this column might be used is when j
 
 
 
-###### CategoryName: 
+###### CategoryName:
 
 Column: CategoryName
 
@@ -73,9 +73,9 @@ Include in Power BI: ***Yes*** / No
 
 Reason: It is part of the descriptive information of the categories.
 
-Good Name: ***Yes*** / No
+Good Name: Yes / ***No***
 
-Better Name: Category Name
+Better Name: Category
 
 Data Type: Text
 
@@ -87,11 +87,11 @@ Calculations: Knowing which category has the highest revenue or in demand.
 
 
 
-###### Description: 
+###### Description:
 
 
 
-1. This gives the types of objects in each category. The types of values that will be there are text-based values.  
+1. This gives the types of objects in each category. The types of values that will be there are text-based values.
 
 Column: Description
 
@@ -123,7 +123,7 @@ Calculations: If you would like to know which is in demand the most in the Bever
 
 
 
-###### Picture: 
+###### Picture:
 
 Column: Picture
 
@@ -155,7 +155,7 @@ Calculations: None
 
 
 
-### Customers Table: 
+### Customers Table:
 
 &#x20;
 
@@ -195,7 +195,7 @@ Column: CompanyName
 
 
 
-Represents: The name of each company 
+Represents: The name of each company
 
 Example Values: Alfreds Futterkiste
 
@@ -285,7 +285,7 @@ Calculations: If you want to compare the number of people in a certain position
 
 
 
-###### Address: 
+###### Address:
 
 Column: Address
 
@@ -345,7 +345,7 @@ Calculations: Filtering the cities
 
 
 
-###### Region: 
+###### Region:
 
 Column: Region
 
@@ -357,7 +357,7 @@ Primary Key: Yes / ***No***
 
 Foreign Key: Yes / No
 
-Related Table: employees 
+Related Table: employees
 
 Include in Power BI: Yes / ***No***
 
@@ -371,7 +371,7 @@ Calculations: Filtering
 
 
 
-###### PostalCode: 
+###### PostalCode:
 
 Column: PostalCode
 
@@ -491,35 +491,37 @@ Calculations: None
 
 
 
-##### EmployeeID: 
+##### EmployeeID:
 
-Column: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Column: EmployeeID
 
 
 
-Represents: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Represents: Each employee is given a number ID to identify them
 
-Example Values: \_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Example Values: 1
 
-Primary Key: Yes / No
+Primary Key: ***Yes*** / No
 
-Foreign Key: Yes / No
+Foreign Key: ***Yes*** / No
 
-Related Table: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Related Table: employeeterritories and orders
 
-Include in Power BI: Yes / No
+Include in Power BI: ***Yes*** / No
 
-Reason: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Reason: Each employee is unique; this helps to identify them in case they may have the same first or last name
 
-Good Name: Yes / No
+Good Name: ***Yes*** / No
 
-Better Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Better Name: None
 
-Data Type: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Data Type: Whole Number
 
-Calculations: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+Calculations: Finding out which employee has the most orders
 
-##### 
+
+
+
 
 ##### LastName:
 
@@ -720,20 +722,4 @@ Calculations: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 ##### 
 
 ##### Salary:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
